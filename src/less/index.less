@@ -1,0 +1,114 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font: 14px/1.4 'Arial';
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#header {
+  height: 50px;
+  font-size: 12px;
+  background: rgba(88, 88, 88, 0.3);
+
+  &::after {
+    content: '';
+    display: block;
+    height: 10px;
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    background: rgba(88, 88, 88, 0.3);
+  }
+
+  a {
+    display: block;
+    font-size: 15px;
+    margin-top: 17px;
+  }
+
+  .user-area {
+    padding-right: 16px;
+    float: right;
+
+    li {
+      float: left;
+      margin-left: 5px;
+
+      span {
+        color: white;
+        display: block;
+        margin-top: 17px;
+        font-size: 15px;
+      }
+    }
+
+    img {
+      height: 31px;
+      margin-top: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  .setting {
+    float: right;
+    margin-left: 9px;
+    display: none;
+  }
+  .add-note,
+  .sort {
+    float: left;
+    margin-left: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .login {
+    float: right;
+    margin-left: 16px;
+  }
+}
+
+#content {
+  position: relative;
+  height: -webkit-calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+// @keyframes move-twink-back {
+//   from {background-position: 0 0;}
+//   to {background-position: -10000px 5000px;}
+// }
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stars {
+  background: url(https://tse4-mm.cn.bing.net/th?id=OIP.kghTlV4smR2z4CDHY0pvGAEsDe&w=282&h=209&c=7&qlt=90&o=4&pid=1.7);
+  z-index: -2;
+}
+// .twinkling {
+//   background: transparent url();
+//   z-index: -1;
+//   animation: move-twink-back 200s linear infinite;
+// }
